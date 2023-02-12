@@ -1,0 +1,101 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.payment_section{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+
+.payment_container{
+
+    width: 90%;
+    height: fit-content;
+    
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+  
+    display: flex;
+    flex-direction: column;
+   
+   gap: 2rem;
+   padding: 1rem 1rem;
+
+}
+
+.payment_section_title{
+    margin-top: 4rem;
+    padding: 1rem 1rem;
+
+}
+
+.payment_product{
+
+    width:5%
+}
+
+.payment_basket_images{
+
+    width: 10%;
+}
+
+
+
+.payment_remove_button {
+    background-color: #f0c14b;
+    border-radius: 2px;
+
+    border-color: #a88734 #9c7e31 #846a29;
+    border: 1px solid;
+    width: 40%;
+    height: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+
+.payment_pay_button{
+
+    background-color: #f0c14b;
+    border-radius: 2px;
+
+    border-color: #a88734 #9c7e31 #846a29;
+    border: 1px solid;
+    width: 20%;
+    height: 1.5rem;
+
+    font-weight: 700;
+
+}
+
+
+@media (max-width:700px) {
+
+  .payment_pay_button{
+
+    width: fit-content;
+    height:fit-content ;
+    padding: 0rem 0.5rem;
+  }
+
+  .payment_remove_button{
+    width: fit-content;
+    height:fit-content ;
+    padding: 0rem 0.5rem;
+  }
+
+  .payment_basket_images{
+    width: 50%;
+  }
+
+}

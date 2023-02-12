@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.amazon_banner {
+
+    width: 100%;
+    object-fit: contain;
+
+
+    z-index: -1;
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+
+    /* mask image gives a fade effect to bottom is the position from pure color to the translucent */
+   margin-bottom: -25.2rem;
+ 
+
+}
+
+/* .home_row{
+    display: flex;
+    gap: 1.5rem;
+  
+
+} */
+
+
+/* ===================================== */
+
+ /* Reusables */
+
+
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+
+
+.grid_one_column{
+
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+.grid_two_column{
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.grid_three_column{
+
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+
+/* ========================================== */
+
+
+
+
+
+
+
+/* =====================================>  media queries*/
+
+
+@media (max-width:700px) {
+
+
+    .home_container>.grid_three_column  {
+
+
+        grid-template-columns:1fr
+    }
+
+    .home_container>.grid_two_column {
+
+      grid-template-columns: 1fr;
+    }
+
+
+    
+
+
+    .amazon_banner{
+
+      margin-bottom: -8.2rem;
+  
+    }
+
+
+  
+}
+
+@media (min-width: 760px) {
+
+    .amazon_banner{
+
+        margin-bottom: -10.2rem;
+    
+      }
+
+
+
+
+}
+
+
+
+
+
+

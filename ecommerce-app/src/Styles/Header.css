@@ -1,0 +1,232 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.menu_icon {
+    background-color: white;
+    margin-right: 1rem;
+    visibility: hidden;
+   
+}
+
+.header {
+
+    background-color: black;
+    width: 100vw;
+    height: 4.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+
+}
+
+
+.header_logo {
+    width: 40%;
+    height: 100%;
+
+    cursor: pointer;
+  
+}
+
+.header_search {
+
+    flex: 1;
+    height: 2.3rem;
+    border: none;
+    font-size: large;
+    outline: none;
+    border: none;
+
+
+}
+
+.cancel_logo{
+    background-color: white;
+    visibility: hidden;
+}
+
+.header_options_container {
+
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 3rem;
+
+
+}
+
+.header_option1,
+.header_option2,
+.header_option3 {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.option_line1 {
+
+    font-size: 0.6rem;
+    font-weight: lighter;
+}
+
+.option_line2 {
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.search {
+
+    background-color: #cd9042;
+    height: 2.3rem;
+    width: 2.3rem;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.search_icon {
+    padding-right: 5px;
+    color: black;
+}
+
+.shopping_icon_logo {
+
+    color: white;
+    background-color: black;
+}
+
+
+.header_option4 {
+
+    font-weight: 700;
+    gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:760px) {
+
+    .header_search {
+
+        display: none;
+
+    }
+
+    .search {
+
+        display: none;
+
+
+    }
+
+    .header{
+        position: relative;
+    }
+    .menu_icon {
+
+        visibility: visible;
+
+    }
+
+
+
+
+    .header_options_container {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    
+        background-color: black;
+        width: 15rem;
+        height: 20rem;
+        visibility: hidden;
+    
+    
+    
+    }
+
+
+
+  .active  .header_options_container {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        background-color: black;
+        width: 15rem;
+        height: 20rem;
+    
+       visibility: visible;
+       opacity: 0.75;
+        
+
+
+    }
+
+
+    .active .menu_icon{
+     
+        visibility: hidden;
+    }
+
+    .cancel_logo{
+      
+        visibility: hidden;
+        margin-right: 2px;    
+    }
+
+    .active .cancel_logo{
+        visibility: visible;
+        position: absolute;
+        right: 0;
+    
+        margin-right: 4rem;
+     
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
